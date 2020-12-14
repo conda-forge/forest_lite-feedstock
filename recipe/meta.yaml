@@ -23,6 +23,22 @@ requirements:
     - nodejs
   run:
     - python >=3.6
+    - fastapi
+    - uvicorn
+    - aiofiles
+    - python-multipart
+    - xarray
+    - forest
+    - h5netcdf
+    - datashader
+    - cartopy_offlinedata
+    - typer
+    - proj>=7.1.0
+    - pyproj>=2.6
+    - nodejs>=14.11.0
+    - pygrib
+    - passlib
+    - python-jose
 
 test:
   imports:
