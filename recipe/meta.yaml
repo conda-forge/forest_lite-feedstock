@@ -1,5 +1,5 @@
 {% set name = "forest_lite" %}
-{% set version = "0.16.1" %}
+{% set version = "0.16.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/MetOffice/forest-lite/archive/v{{ version }}.tar.gz
-  sha256: c82b73888aef7c0801a40c6bac1d8f482d2dac26903307aa4ba95171e2a5539b
+  sha256: dfed1ce6846cea2e9d5243fe247d2ea63f3a030f8d5dbb79657d82ff90604dbb
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - forest_lite = forest_lite.cli:app
 
@@ -49,7 +49,7 @@ about:
   license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
-  summary: 'Forecast and observation research and evaluation survey tool'
+  summary: Forecast and observation research and evaluation survey tool
   description: |
     FOREST-Lite is a weather data web viewer with a Python data server
     and JS client. It works with Python 3.7+.
