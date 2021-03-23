@@ -39,6 +39,14 @@ requirements:
     - pygrib
     - passlib
     - python-jose
+    - bokeh
+    - cartopy
+    - iris
+    - numpy
+    - pytz
+    - pyyaml
+    - pydantic
+    - starlette
 
 test:
   imports:
