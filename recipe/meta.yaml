@@ -30,6 +30,7 @@ requirements:
     - aiofiles
     - cartopy_offlinedata
     - datashader
+    - graphene
     - h5netcdf
     - iris
 
