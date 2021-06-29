@@ -1,5 +1,5 @@
 {% set name = "forest_lite" %}
-{% set version = "0.17.1" %}
+{% set version = "0.17.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/MetOffice/forest-lite/archive/v{{ version }}.tar.gz
-  sha256: a20cd8e74935de6939d6a986bcc094355689c44d35fc7a61082e2d4f0ce82e6b
+  sha256: d38406ab7745a76f8fb4e83742a4ad046aa7b41b12d591451f1e1d201718c8d8
 
 build:
   noarch: python
