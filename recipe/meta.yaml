@@ -20,7 +20,7 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - nodejs
+    - nodejs =14
   run:
     - python >=3.6
     - fastapi
