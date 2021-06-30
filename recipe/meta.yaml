@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - forest_lite = forest_lite.cli:app
@@ -20,7 +20,7 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - nodejs
+    - nodejs =14
   run:
     - python >=3.6
     - fastapi
@@ -33,6 +33,7 @@ requirements:
     - graphene
     - h5netcdf
     - iris
+    - click =7.1.2
 
 test:
   imports:
